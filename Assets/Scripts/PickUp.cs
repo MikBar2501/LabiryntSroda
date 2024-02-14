@@ -12,7 +12,7 @@ public class PickUp : MonoBehaviour
 
     public void Rotation()
     {
-        transform.Rotate(new Vector3(0, 5f, 0));
+        transform.Rotate(new Vector3(5f, 5f, 5f) * Time.deltaTime * 15f);
     }
 
     public virtual void Picked()
